@@ -3,12 +3,143 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>App Ads</title>
+    <title>Death Zone Online - Support</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f7f9;
+        --text: #16181d;
+        --muted: #5b6472;
+        --line: #d9dee7;
+        --panel: #ffffff;
+        --accent: #2563eb;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1117;
+          --text: #f0f3f8;
+          --muted: #a8b3c2;
+          --line: #303844;
+          --panel: #151b23;
+          --accent: #58a6ff;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(760px, calc(100% - 32px));
+        margin: 48px auto;
+        padding: 36px;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0 0 18px;
+        font-size: clamp(28px, 5vw, 42px);
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 22px;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 4px 0;
+      }
+
+      section {
+        padding: 24px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      section:first-of-type {
+        margin-top: 24px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+    </style>
   </head>
   <body>
     <main>
-      <h1>App Ads</h1>
-      <p>This site hosts <a href="/app-ads.txt">app-ads.txt</a> for AdMob verification.</p>
+      <h1>Death Zone Online - Support</h1>
+      <p>Welcome to the official support page for Death Zone Online.</p>
+      <p>If you experience any issues, bugs, or have questions or suggestions, feel free to contact us.</p>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:enarcheblstudio@gmail.com">enarcheblstudio@gmail.com</a></p>
+        <p class="muted">We usually respond within 24-48 hours.</p>
+      </section>
+
+      <section>
+        <h2>Common Issues</h2>
+        <p><strong>Game crashes or does not start</strong></p>
+        <ul>
+          <li>Restart your device.</li>
+          <li>Make sure you have the latest version installed.</li>
+        </ul>
+
+        <p><strong>Lost progress or items</strong></p>
+        <ul>
+          <li>Contact us and include your Player ID, if available.</li>
+        </ul>
+
+        <p><strong>Connection issues</strong></p>
+        <ul>
+          <li>Check your internet connection.</li>
+          <li>Try switching between Wi-Fi and mobile data.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Feedback & Suggestions</h2>
+        <p>We are constantly improving the game and appreciate your feedback.</p>
+        <p>Your ideas help make Death Zone Online better for everyone.</p>
+      </section>
+
+      <section>
+        <h2>Developer</h2>
+        <p>Enarchebl Studio</p>
+      </section>
+
+      <section>
+        <p>Thank you for playing.</p>
+        <p class="muted">AdMob verification file: <a href="/app-ads.txt">app-ads.txt</a></p>
+      </section>
     </main>
   </body>
 </html>
